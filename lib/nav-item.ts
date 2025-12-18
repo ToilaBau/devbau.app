@@ -16,10 +16,10 @@ export type NavItem = {
 };
 
 export const navItems: NavItem[] = [
-  { title: "Home", href: "/", icon: Home },
-  { title: "About", href: "/about", icon: User },
-  { title: "Portfolio", href: "/portfolio", icon: FolderOpen },
-  { title: "Products", href: "/products", icon: ShoppingBag },
-  { title: "Hire Me", href: "/hireme", icon: Briefcase },
-  { title: "Contact", href: "/contact", icon: Mail },
+  { title: "Home", href: "/" as Route, icon: Home },
+  { title: "About", href: "/about" as Route, icon: User },
+  { title: "Portfolio", href: "/portfolio" as Route, icon: FolderOpen },
+  { title: "Products", href: "/products" as Route, icon: ShoppingBag },
+  { title: "Hire Me", href: "/hireme" as Route, icon: Briefcase },
+  { title: "Contact", href: "/contact" as Route, icon: Mail },
 ];

@@ -11,6 +11,7 @@ import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
+import type { Route } from "next";
 
 export function ThemeToggleButton() {
   const { setTheme, resolvedTheme } = useTheme();
@@ -72,10 +73,10 @@ export function Navbar() {
           {/* Sign In/Sign Up buttons */}
           <div className="flex items-center gap-2">
             <Button variant="ghost" asChild>
-              <Link href="/login">Đăng nhập</Link>
+              <Link href={"/login" as Route}>Đăng nhập</Link>
             </Button>
             <Button asChild>
-              <Link href="/register">Đăng ký</Link>
+              <Link href={"/register" as Route}>Đăng ký</Link>
             </Button>
           </div>
         </div>
